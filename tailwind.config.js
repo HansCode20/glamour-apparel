@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const withMT = require("@material-tailwind/react/utils/withMT");
 
 export default {
   content: [
@@ -10,7 +9,7 @@ export default {
     extend: {},
   },
   plugins: [
-    require('tailwind-hamburgers', 'daisyui', 'headlessui'),
+    require('tailwind-hamburgers', 'daisyui'),
   ],
 }
 
