@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #000000;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+} */
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 4px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+#snap-midtrans {
+  display: none;
+  z-index: 1000;
+}
+
+.number-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.custom-checkbox {
+  -webkit-appearance: none; /* untuk WebKit browsers */
+  -moz-appearance: none; /* untuk Firefox */
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #000;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  position: relative;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.custom-checkbox:checked::after {
+  content: ''; /* konten kosong */
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 4px;
+  height: 8px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.dashboard-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  .dashboard-row {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+/* BoxImage and LastTransaction styling */
+.dashboard-row > * {
+  flex: 1;
+  overflow: hidden;
+}
+
+.dashboard-row .flex-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

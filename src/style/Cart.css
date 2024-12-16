@@ -1,0 +1,24 @@
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+#iframe-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+  }
+  
+  #iframe-container iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none; /* Hilangkan border iframe jika tidak diperlukan */
+  }
+  
+  
+  
