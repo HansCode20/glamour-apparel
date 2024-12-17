@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-
-
+import tailwindHamburgers from 'tailwind-hamburgers'
 
 export default {
   content: [
@@ -11,7 +10,7 @@ export default {
     extend: {},
   },
   plugins: [
-    require('tailwind-hamburgers')
+    tailwindHamburgers
   ],
 }
 
