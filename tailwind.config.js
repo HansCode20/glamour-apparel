@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwind-hamburgers', 'daisyui', 'headlessui');
+
 
 export default {
   content: [
@@ -9,8 +9,6 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [
-    plugin
-  ],
+  plugins: [],
 }
 
